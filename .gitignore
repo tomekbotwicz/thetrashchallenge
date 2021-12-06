@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# npm
+.npm
+package-lock.json
+
+# gatsby
+.cache/
+public
+
+# mac files
+.DS_Store

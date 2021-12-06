@@ -36,8 +36,10 @@ export const Landing = () => {
   return (
     <Wrapper>
       <div id="mybutton">
-<button class="feedback">psst...click on each image to learn more!</button>
+<button class="feedback">psst...click on each image to learn more! (not done)</button>
 </div>
+<h1> THIS SITE IS NOT FINISHED. CHECK BACK ON TUESDAY FOR FINAL VERSION.</h1>
+
         <Row>
           <Col sm={2.5}>
           <div id="main"></div>
@@ -70,8 +72,6 @@ export const Landing = () => {
           <BannerLogo theme={theme}>
           <img src={logo} alt="the trash challenge logo"/>
           </BannerLogo>
-          
-          <Join/>
           </Col>
           <Col sm={0.5}/>
           <Col sm={3}>
@@ -157,6 +157,13 @@ export const Landing = () => {
       >
         <p></p>
       </PureModal>
+      <Join/>
+      If you choose to sign up for The Trash Challenge, you should seek to reduce your trash footprint in two ways: 
+      <br/><br/>
+1. Commit to proper sortation and separation of trash, with recyclable plastics, paper, and metals going to recycling and all organics & soiled paper going to compost. All clothing should be recycled at textile recyclers or donated.
+<br/><br/>
+2. Ensure that all remaining trash is gathered and not disposed of. It must be kept inside of a receptacle smaller than 1ftx1ftx1ft in your room. Trash may be tossed at the end of the challenge.
+
     </ContentDetails>
 
     </Wrapper>

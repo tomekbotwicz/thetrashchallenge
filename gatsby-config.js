@@ -35,7 +35,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
-        short_name: 'tomek :)',
+        short_name: 'trash challenge',
         start_url: '/',
         theme_color: 'white',
         background_color: 'white',

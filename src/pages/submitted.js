@@ -1,10 +1,12 @@
 import React from 'react';
-import { SidePageLayout, SEO } from 'components/common';
+import { SidePageLayout, Seo } from 'components/common';
 import { Submitted } from 'components/landing';
 
-export default () => (
+const submitted = () => {}
   <SidePageLayout>
-    <SEO/>
+    <Seo/>
     <Submitted/>
   </SidePageLayout>
-);
+;
+
+export default submitted;

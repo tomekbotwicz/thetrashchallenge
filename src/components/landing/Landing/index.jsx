@@ -1,11 +1,6 @@
-import React, { useContext, useState, ReactDOM, Component } from 'react';
-import ReactModal from 'react-modal';
-import { render } from 'react-dom';
-import Collapsible from 'react-collapsible';
+import React, { useContext, useState } from 'react';
 import { Row, Col } from 'react-grid-system';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { StaticImage } from "gatsby-plugin-image";
-import Fade from 'react-reveal/Fade'
 import logo from 'assets/illustrations/logo.svg';
 import chips from 'assets/illustrations/chips.png';
 import bag from 'assets/illustrations/bag.png';
@@ -13,11 +8,7 @@ import toothbrush from 'assets/illustrations/toothbrush.png';
 import polyester from 'assets/illustrations/polyester.png';
 import bottle from 'assets/illustrations/bottle.png';
 
-import { Header } from 'components/theme';
-import { Wrapper, BannerThumbnail, Modal, Chips, Shirt, Toothbrush, Bottle, Bag, BannerThumbnail1, BannerLogo, Content, ContentBodyLead, Line, ContentBody, ContentDetails, Alignment, ContentThumbnailRight, ButtonSoon, MobileLineBreak} from './styles';
-import { Button } from 'components/common';
-import { Typing } from "typing-effect-reactjs";
-import { Link } from "gatsby";
+import { Wrapper, Chips, Shirt, Toothbrush, Bottle, Bag, BannerLogo, ContentDetails, Alignment} from './styles';
 
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
@@ -35,8 +26,8 @@ export const Landing = () => {
 
   return (
     <Wrapper>
-      <div id="mybutton">
-<div class="feedback">psst...click on each image to learn more!</div>
+      <div id="info">
+<div class="text">psst...click on each image to learn more!</div>
 </div>
         <Row>
           <Col sm={1}/>

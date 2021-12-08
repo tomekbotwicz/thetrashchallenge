@@ -5,10 +5,7 @@ export const Wrapper = styled.div`
   padding-left: 10rem;
   padding-right: 10rem;
   margin: 0;
-  @media (min-width:370px) and (max-width:380px) {
-    margin-bottom: 1rem;
-  }
-  .feedback {
+  .text {
     background-color : #133337;
     color: white;
     padding: 10px 20px;
@@ -17,7 +14,7 @@ export const Wrapper = styled.div`
     border-color: #0D2326;
   }
   
-  #mybutton {
+  #info {
     position: fixed;
     top: 10px;
     right: 10px;

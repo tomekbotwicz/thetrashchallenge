@@ -1,10 +1,12 @@
 import React from 'react';
-import { Layout, SEO } from 'components/common';
+import { Layout, Seo } from 'components/common';
 import { Landing } from 'components/landing';
 
-export default () => (
+const index = () => {}
   <Layout>
-    <SEO/>
+    <Seo/>
     <Landing/>
   </Layout>
-);
+;
+
+export default index;

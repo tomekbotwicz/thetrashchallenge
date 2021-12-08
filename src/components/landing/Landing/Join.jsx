@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { navigate } from "gatsby";
+import { Row, Col } from 'react-grid-system';
 import { RegisterButton, Input} from './styles';
 
 const updateByPropertyName = (propertyName, value) => () => ({
@@ -34,6 +35,8 @@ class Join extends Component {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
+          <Row>
+            <Col sm={5}>
           <Input
             type="text"
             name="email"
@@ -46,7 +49,12 @@ class Join extends Component {
               )
             }
           />
+          </Col>
+          <Col sm={1}/>
+          <Col sm={5}>
           <RegisterButton type="submit">submit</RegisterButton>
+          </Col>
+          </Row>
         </form>
     );
   }

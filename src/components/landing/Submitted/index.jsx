@@ -11,13 +11,13 @@ export const Submitted = () => {
       <Wrapper as={Container}>
         <Details theme={theme}>
           <br/><br/><br/><br/><br/><br/>
-          <h1>Success!</h1>
+          <h1>success!</h1>
           <p>
-            Thanks for joining! You will receive an email soon with details on how to begin.
+            thanks for joining! you will receive an email soon with details on how to begin.
           </p>
           <a href="/">
             <Button theme={theme}>
-              Back
+              back
             </Button>
           </a>
         </Details>

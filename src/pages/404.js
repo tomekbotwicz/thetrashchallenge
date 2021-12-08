@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { SidePageLayout, SEO } from 'components/common';
-import { ThemeContext } from 'providers/ThemeProvider';
 import styled from "styled-components";
 
 const Center = styled.div`
@@ -9,15 +8,9 @@ const Center = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* prefixes */
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-
 `;
 
 export default () => {
-
-  const { theme } = useContext(ThemeContext);
 
   return (
   <SidePageLayout>

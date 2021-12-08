@@ -2,116 +2,68 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
   margin: 0;
-  .text {
+  height: 100vh;
+  .tip {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
     background-color : #444444;
     color: #FFF;
     padding: 15px 20px;
     border-radius: 20px;
   }
-  
-  #info {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-  }
-
 `;
-
-
 
 export const Chips = styled.div`
   transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  margin-bottom: 5rem;
   transform: rotate(-15deg);
   cursor: pointer;
   img {
-    width: 70%;
-  }
-  @media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
-    
+    width: 75%;
   }
 `;
 
 export const Shirt = styled.div`
   transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  cursor: pointer;
-  margin-bottom: 5rem;
   transform: rotate(5deg);
+  cursor: pointer;
   img {
     width: 80%;
-  }
-  @media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
-  }
-`;
-
-export const Modal = styled.div`
-  transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  cursor: pointer;
-  margin-bottom: 5rem;
-  transform: rotate(5deg);
-
-  @media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
   }
 `;
 
 export const Toothbrush = styled.div`
   transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   cursor: pointer;
-  margin-bottom: 5rem;
   img {
     width: 80%;
-  }
-  @media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
   }
 `;
 
 export const Bottle = styled.div`
   transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  cursor: pointer;
-  margin-bottom: 5rem;
   transform: rotate(-10deg);
-  margin-top: 3rem;
+  cursor: pointer;
+  margin-top: 2rem;
   img {
     width: 80%;
-  }
-  @media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
   }
 `;
 
 export const Bag = styled.div`
   transition: all 0.5s ease;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  cursor: pointer;
-  margin-bottom: 5rem;
   transform: rotate(20deg);
+  cursor: pointer;
   img {
     width: 80%;
   }
-  @media (max-width: 960px) {
+`;
+
+{/*@media (max-width: 960px) {
     width: 80%;
     margin-left: 1rem;
-  }
-`;
-{/*filter: drop-shadow(10px 10px 7px rgba(214,212,209,0.5));*/}
-
+  }*/}
 
 export const BannerLogo = styled.div`
   transition: all 0.5s ease;
@@ -120,6 +72,7 @@ export const BannerLogo = styled.div`
   margin-left:-2.3rem;
   margin-top:-5.5rem;
   margin-bottom:-4rem;
+  width:150%;
   @media (max-width: 1300px) {
     margin-top:-5rem;
     margin-left:-1.7rem;
@@ -127,51 +80,36 @@ export const BannerLogo = styled.div`
   @media (max-width: 960px) {
     margin-top:0rem;
     margin-bottom:-2rem;
-  }
-  width:150%;
-  @media (max-width: 960px) {
-    width: 80%;
     margin-left: 1rem;
+    width: 150%;
   }
 `;
 
-export const Content = styled.div`
+export const Background = styled.div`
+  background: black;
+  border: 3px solid #FFF;
+  border-radius: 20px;
 `;
 
-export const ContentBody = styled.div`
-  padding: 1rem 0;
-  align-items: center;
-`;
-
-export const ContentBodyLead = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
-`;
-
-export const ContentDetails = styled.div`
-  flex: 1;
+export const Details = styled.div`
   text-align: center;
-
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
-  h1 {
+  p {
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-top: 0.8rem;
     font-size: 12pt;
     font-weight: normal;
-    line-height: 1.3;
+    line-height: 1.5;
     text-align: left;
-    color: black;
-    a {
-      text-decoration: underline;
-    }
+    padding:25px;
+    color: white;
+  }
+  h1 {
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    color: white;
   }
   h2 {
     margin-top: 3rem;
@@ -181,75 +119,12 @@ export const ContentDetails = styled.div`
     line-height: 1.5;
     text-align: center;
     color: white;
-    a {
-      text-decoration: underline;
-      color: lightblue;
-    }
   }
-  h3 {
-    margin-top: 0rem;
-    margin-bottom: -1rem;
-    font-size: 16pt;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    a {
-      text-decoration: underline;
-      color: lightblue;
-    }
-  }
-  h4 {
-    margin-bottom: 1rem;
-    margin-top: 0.8rem;
-    font-size: 12pt;
-    line-height: 1.3;
-    text-align: center;
-    color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
-    a {
-      text-decoration: underline;
-      color: lightblue;
-    }
-  }
-  h5 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 12pt;
-    font-weight: normal;
-    line-height: 1.5;
-    text-align: left;
-    padding:25px;
-    color: white;
-    a {
-      text-decoration: underline;
-      color: lightblue;
-    }
-  }
-  p {
-    margin-bottom: 1rem;
-    margin-top: 0.8rem;
-    font-size: 12pt;
-    font-weight: normal;
-    line-height: 1.3;
-    text-align: left;
-    color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
-    a {
-      text-decoration: underline;
-      color: lightblue;
-    }
-  }
-  a.linkstyle {
+  a {
     text-decoration: underline;
     color: lightblue;
   }
 `;
-
-export const Background = styled.div`
-  border: 3px solid black;
-  border-radius: 20px;
-  border-color: #FFF;
-  background: black;
-`;
-
 
 export const Button = styled.button`
   width: auto;
@@ -266,7 +141,7 @@ export const Button = styled.button`
   border-radius: 10px;
   transition: all 0.5s ease;
   background: #444444;
-  color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};
+  color: #FFF;
   :hover {
     box-shadow: ${({ theme }) => (theme === 'dark' ? 'inset 0 0 100px 100px #E5E5E5' : 'inset 0 0 100px 100px #444d56')};
   }

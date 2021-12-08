@@ -4,8 +4,8 @@
     $item-size,
     $class-for-IE: false
   ) {
-    $half-item: ($item-size / 2);
-    $half-parent: ($circle-size / 2);
+    $half-item: calc($item-size / 2);
+    $half-parent: calc($circle-size / 2);
     
     position: relative; /* 1 */
     width:  $circle-size;
@@ -20,15 +20,12 @@
       position: absolute;
       top:  50%; 
       left: 50%;
-      @media (max-width: 960px) {
-        left: 10%;
-      }
       width:  $item-size;
       height: $item-size;
       margin: -$half-item;
     }
     
-    $angle: (360 / $nb-items);
+    $angle: calc(360 / $nb-items);
     $rot: 0;
   
     @for $i from 1 through $nb-items {
@@ -38,7 +35,6 @@
         }
       } @else {
         > .#{$class-for-IE}#{$i} {
-          // If CSS transforms are not supported
           $mt: sin($rot * pi() / 180) * $half-parent - $half-item;
           $ml: cos($rot * pi() / 180) * $half-parent - $half-item;
           margin: $mt 0 0 $ml;
@@ -49,27 +45,25 @@
     }
   }
 
-  .circle-container {
-    @include distribute-on-circle(5, 42em, 12em, false); 
-    @media (max-width: 1300px) {
-        @include distribute-on-circle(5, 34em, 11em, false); 
-      }
-    @media (max-width: 960px) {
-        @include distribute-on-circle(5, 20em, 10em, false);
-        border: none;
-      }
-    margin: 5em auto 0;
-    border: solid 3px white;
-  }
-  
-.circle-container img { 
-    display: block; 
-    width: 100%; 
-    border-radius: 0%;
-    transition: all .3s ease; 
-    //filter: grayscale(100%);
-
-    &:hover {
-        transform: scale(1.1) rotate(-5deg);
+.circle-container {
+  @include distribute-on-circle(5, 42em, 12em, false); 
+  @media (max-width: 1300px) {
+      @include distribute-on-circle(5, 34em, 11em, false); 
     }
+  @media (max-width: 960px) {
+      @include distribute-on-circle(5, 20em, 7em, false);
+      border: none;
+    }
+  margin: 5em auto 0;
+  border: solid 3px white;
+}
+
+.circle-container img { 
+  display: block; 
+  width: 100%; 
+  border-radius: 0%;
+  transition: all .3s ease; 
+  &:hover {
+      transform: scale(1.1) rotate(-5deg);
+  }
 }

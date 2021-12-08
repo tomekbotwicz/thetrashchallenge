@@ -10,7 +10,6 @@ export const Submitted = () => {
     <div>
       <Wrapper as={Container}>
         <Details theme={theme}>
-          <br/><br/><br/><br/><br/><br/>
           <h1>success!</h1>
           <p>
             thanks for joining! you will receive an email soon with details on how to begin.

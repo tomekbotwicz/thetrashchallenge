@@ -13,21 +13,14 @@
     "gatsby-plugin-sass": "^5.3.0",
     "gatsby-plugin-sharp": "4.3.0",
     "gatsby-plugin-styled-components": "5.3.0",
-    "gatsby-source-filesystem": "4.3.0",
     "gatsby-transformer-sharp": "4.3.0",
     "react": "latest",
-    "react-collapsible": "^2.8.4",
-    "react-dom": "latest",
+    "react-dom": "^17.0.2",
     "react-grid-system": "8.0.1",
     "react-helmet": "latest",
-    "react-hide-on-scroll": "latest",
-    "react-modal": "^3.14.4",
     "react-pure-modal": "^2.1.0",
-    "react-reveal": "latest",
-    "react-scroll-parallax": "^2.4.0",
     "sass": "^1.44.0",
-    "styled-components": "5.3.3",
-    "typing-effect-reactjs": "latest"
+    "styled-components": "5.3.3"
   },
   "scripts": {
     "build": "gatsby build",

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import './circle.scss';
-import { Wrapper, Chips, Shirt, Toothbrush, Bottle, Bag, BannerLogo, Button, Details, Background} from './styles';
+import { Wrapper, Center, Chips, Shirt, Toothbrush, Bottle, Bag, BannerLogo, Background, Details, Wrap, Button } from './styles';
 import Join from './Join';
 import logo from 'assets/illustrations/logo.svg';
 import chips from 'assets/illustrations/chips.png';
@@ -23,44 +23,53 @@ export const Landing = () => {
   return (
   <Wrapper>
     <div class="tip">
-      psst...click on each image to learn more!
+      psst...click an image to learn more!
+    </div>
+    <div class="info">
+      made by tomek with ❤️ | <a href="http://tomek.org" target="_blank" rel="noreferrer">tomek.org</a>
     </div>
 
-    <ul class='circle-container'>
-      <li>
-        <Toothbrush onClick={() => setModalBrush(true)}>
-          <img src={toothbrush} alt="the trash challenge logo"/>
-        </Toothbrush>
-      </li>
-      <li>
-        <Bottle onClick={() => setModalBottle(true)}>
-          <img src={bottle} alt="the trash challenge logo"/>
-        </Bottle>
-      </li>
-      <li>
-        <Bag onClick={() => setModalBag(true)}>
-          <img src={bag} alt="the trash challenge logo"/>
-        </Bag>
-      </li>
-      <li>
-        <Chips onClick={() => setModalChips(true)}>    
-          <img src={chips} alt="the trash challenge logo"/>
-        </Chips>
-      </li> 
-      <li>
-        <Shirt onClick={() => setModalShirt(true)}>
-          <img src={polyester} alt="the trash challenge logo"/>
-        </Shirt>
-      </li>
-      <li>
-        <BannerLogo>
-          <img src={logo} alt="the trash challenge logo"/>
-        </BannerLogo>
-        <Join/>
-        <Button onClick={() => setModalRules(true)}>rules</Button>
-        <Button onClick={() => setModalResources(true)}>resources</Button>
-      </li>
-    </ul>
+    <Center>
+      <ul class='circle-container'>
+        <li>
+          <Toothbrush onClick={() => setModalBrush(true)}>
+            <img src={toothbrush} alt="the trash challenge logo"/>
+          </Toothbrush>
+        </li>
+        <li>
+          <Bottle onClick={() => setModalBottle(true)}>
+            <img src={bottle} alt="the trash challenge logo"/>
+          </Bottle>
+        </li>
+        <li>
+          <Bag onClick={() => setModalBag(true)}>
+            <img src={bag} alt="the trash challenge logo"/>
+          </Bag>
+        </li>
+        <li>
+          <Chips onClick={() => setModalChips(true)}>    
+            <img src={chips} alt="the trash challenge logo"/>
+          </Chips>
+        </li> 
+        <li>
+          <Shirt onClick={() => setModalShirt(true)}>
+            <img src={polyester} alt="the trash challenge logo"/>
+          </Shirt>
+        </li>
+        <li>
+          <Center>
+          <BannerLogo>
+            <img src={logo} alt="the trash challenge logo"/>
+          </BannerLogo>
+          <Join/>
+          <Wrap>
+            <Button onClick={() => setModalRules(true)}>rules</Button>
+            <Button onClick={() => setModalResources(true)}>resources</Button>
+          </Wrap>
+          </Center>
+        </li>
+      </ul>
+    </Center>
 
     <Details>
       <PureModal
@@ -159,9 +168,6 @@ export const Landing = () => {
         </Background>
       </PureModal>
 
-
-
-
       <PureModal
         width='60%'
         height='60%'
@@ -191,11 +197,6 @@ export const Landing = () => {
         </p>
         </Background>
       </PureModal>
-
-
-
-
-
 
       <PureModal
         width='60%'

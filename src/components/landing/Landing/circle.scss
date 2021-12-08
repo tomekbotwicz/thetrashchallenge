@@ -51,9 +51,11 @@
       @include distribute-on-circle(5, 34em, 11em, false); 
     }
   @media (max-width: 960px) {
-      @include distribute-on-circle(5, 20em, 7em, false);
-      border: none;
+      @include distribute-on-circle(5, 30em, 9em, false);
     }
+  @media (max-width: 640px) {
+    @include distribute-on-circle(5, 20em, 7em, false);
+  }
   margin: 5em auto 0;
   border: solid 3px white;
 }

@@ -6,12 +6,34 @@ export const Wrapper = styled.div`
   height: 100vh;
   .tip {
     position: fixed;
+    bottom: 70px;
+    right: 10px;
+    background-color : #444444;
+    color: #FFF;
+    padding: 15px 20px;
+    border-radius: 20px;
+  }
+  .info {
+    position: fixed;
     bottom: 10px;
     right: 10px;
     background-color : #444444;
     color: #FFF;
     padding: 15px 20px;
     border-radius: 20px;
+    a {
+      color: lightblue
+    }
+  }
+`;
+
+export const Center = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (max-width: 960px) {
+    margin-top:-7rem;
   }
 `;
 
@@ -69,19 +91,21 @@ export const BannerLogo = styled.div`
   transition: all 0.5s ease;
   filter: invert(1);
   pointer-events: none;
-  margin-left:-2.3rem;
-  margin-top:-5.5rem;
-  margin-bottom:-4rem;
+  margin-left:-3.75em;
+  margin-top:-2rem;
+  margin-bottom:-5.5rem;
   width:150%;
   @media (max-width: 1300px) {
-    margin-top:-5rem;
-    margin-left:-1.7rem;
+    margin-top:-2rem;
+    margin-left:-1.5em;
+    margin-bottom:-4.5rem;
+    width:120%;
   }
   @media (max-width: 960px) {
-    margin-top:0rem;
-    margin-bottom:-2rem;
-    margin-left: 1rem;
-    width: 150%;
+    margin-top:15rem;
+    margin-left:0em;
+    margin-bottom:-3.5rem;
+    width:100%;
   }
 `;
 
@@ -102,6 +126,9 @@ export const Details = styled.div`
     text-align: left;
     padding:25px;
     color: white;
+    @media only screen and (max-width: 640px) {
+      font-size: 9pt;
+    }
   }
   h1 {
     margin-top: 0rem;
@@ -110,6 +137,9 @@ export const Details = styled.div`
     font-weight: bold;
     text-align: center;
     color: white;
+    @media only screen and (max-width: 640px) {
+      font-size: 12pt;
+    }
   }
   h2 {
     margin-top: 3rem;
@@ -126,16 +156,19 @@ export const Details = styled.div`
   }
 `;
 
+export const Wrap = styled.div`
+  white-space: nowrap;
+`;
+
 export const Button = styled.button`
-  width: auto;
+  display: inline-block;
   cursor: pointer;
   font-size: 10pt;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left:10%;
-  margin-right:-10px;
+  margin-left:11%;
   margin-top: -1rem;
   border: none;
   border-radius: 10px;
@@ -145,20 +178,22 @@ export const Button = styled.button`
   :hover {
     box-shadow: ${({ theme }) => (theme === 'dark' ? 'inset 0 0 100px 100px #E5E5E5' : 'inset 0 0 100px 100px #444d56')};
   }
+  @media only screen and (max-width: 640px) {
+    font-size: 8pt;
+  }
   @media only screen and (max-width: 407px) {
       border-radius: 10px;
     }
 `;
 
 export const RegisterButton = styled.button`
-  width: auto;
+display: inline-block;
   cursor: pointer;
   font-size: 10pt;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left:1.5rem;
   border: none;
   border-radius: 0 10px 10px 0;
   transition: all 0.5s ease;
@@ -167,18 +202,19 @@ export const RegisterButton = styled.button`
   :hover {
     box-shadow: ${({ theme }) => (theme === 'dark' ? 'inset 0 0 100px 100px #E5E5E5' : 'inset 0 0 100px 100px #444d56')};
   }
-  @media only screen and (max-width: 407px) {
-      border-radius: 10px;
-    }
+  @media only screen and (max-width: 640px) {
+    font-size: 8pt;
+  }
 `;
 
 export const Input = styled.input`
+display: inline-block;
   font-size: 10pt;
   padding: 8px;
   background: #DCDCDC;
   border: none;
   border-radius: 10px 0 0 10px;
-  @media only screen and (max-width: 407px) {
-      border-radius: 10px;
-    }
+  @media only screen and (max-width: 640px) {
+    font-size: 8pt;
+  }
 `;

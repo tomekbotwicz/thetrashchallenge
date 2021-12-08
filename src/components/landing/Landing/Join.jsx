@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { navigate } from "gatsby";
-import { Row, Col } from 'react-grid-system';
-import { RegisterButton, Input} from './styles';
+import { Wrap, RegisterButton, Input} from './styles';
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value
@@ -35,26 +34,21 @@ class Join extends Component {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
-          <Row>
-            <Col sm={5}>
-          <Input
-            type="text"
-            name="email"
-            placeholder="name@example.com"
-            value={this.state.email}
-            required
-            onChange={event =>
-              this.setState(
-                updateByPropertyName("email", event.target.value)
-              )
-            }
-          />
-          </Col>
-          <Col sm={1}/>
-          <Col sm={5}>
-          <RegisterButton type="submit">submit</RegisterButton>
-          </Col>
-          </Row>
+          <Wrap>
+            <Input
+              type="text"
+              name="email"
+              placeholder="name@example.com"
+              value={this.state.email}
+              required
+              onChange={event =>
+                this.setState(
+                  updateByPropertyName("email", event.target.value)
+                )
+              }
+            />
+            <RegisterButton type="submit">submit</RegisterButton>
+          </Wrap>
         </form>
     );
   }

@@ -9,16 +9,16 @@ export const Wrapper = styled.div`
     margin-bottom: 1rem;
   }
   .feedback {
-    background-color : #31B0D5;
+    background-color : #133337;
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
-    border-color: #46b8da;
+    border-color: #0D2326;
   }
   
   #mybutton {
     position: fixed;
-    top: -4px;
+    top: 10px;
     right: 10px;
   }
 `;
@@ -30,7 +30,9 @@ export const Chips = styled.div`
   filter: drop-shadow(10px 10px 7px rgba(255,255,0,0.5));
   transform: rotate(-15deg);
   cursor: pointer;
-
+  img {
+    width: 80%;
+  }
   @media (max-width: 960px) {
     width: 80%;
     margin-left: 1rem;
@@ -38,6 +40,22 @@ export const Chips = styled.div`
 `;
 
 export const Shirt = styled.div`
+  transition: all 0.5s ease;
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
+  cursor: pointer;
+  margin-bottom: 5rem;
+  filter: drop-shadow(10px 10px 7px rgba(255,255,255,0.5));
+  transform: rotate(5deg);
+  img {
+    width: 80%;
+  }
+  @media (max-width: 960px) {
+    width: 80%;
+    margin-left: 1rem;
+  }
+`;
+
+export const Modal = styled.div`
   transition: all 0.5s ease;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   cursor: pointer;
@@ -58,7 +76,9 @@ export const Toothbrush = styled.div`
   margin-bottom: 5rem;
   filter: drop-shadow(10px 10px 7px rgba(125,249,255,0.5));
   transform: rotate(10deg);
-
+  img {
+    width: 80%;
+  }
   @media (max-width: 960px) {
     width: 80%;
     margin-left: 1rem;
@@ -73,7 +93,9 @@ export const Bottle = styled.div`
   filter: drop-shadow(10px 10px 7px rgba(0,109,176,0.5));
   transform: rotate(-10deg);
   margin-top: 3rem;
-
+  img {
+    width: 80%;
+  }
   @media (max-width: 960px) {
     width: 80%;
     margin-left: 1rem;
@@ -87,7 +109,9 @@ export const Bag = styled.div`
   margin-bottom: 5rem;
   filter: drop-shadow(10px 10px 7px rgba(214,212,209,0.5));
   transform: rotate(20deg);
-
+  img {
+    width: 80%;
+  }
   @media (max-width: 960px) {
     width: 80%;
     margin-left: 1rem;
@@ -99,7 +123,6 @@ export const BannerLogo = styled.div`
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   pointer-events: none;
   margin-top: -5rem;
-  margin-bottom: -7rem;
 
   @media (max-width: 960px) {
     width: 80%;
@@ -135,23 +158,6 @@ export const ContentDetails = styled.div`
     width: 100%;
   }
 
-  .Collapsible__trigger {
-    cursor: pointer;
-    font-size: 24pt;
-    font-weight: bold;
-    :hover {
-      background: ${({ theme }) => (theme === 'dark' ? 'rgba(50, 50, 50, 0.5)' : 'rgba(210, 210, 210, 0.5)')};;
-      border-radius: 10px;
-      padding: 10px;
-    }
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-      font-size: 20pt;
-    }
-  }
-
   h2 {
     margin-bottom: 1rem;
     font-size: 14pt;
@@ -165,25 +171,21 @@ export const ContentDetails = styled.div`
   }
   h3 {
     margin-bottom: 0rem;
-    font-size: 14pt;
-    font-weight: normal;
+    font-size: 20pt;
+    font-weight: bold;
     line-height: 1;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+    color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
   }
   h4 {
-    margin-bottom: 0.5rem;
-    font-size: 16pt;
-    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    font-size: 12pt;
     line-height: 1.3;
-    text-align: left;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    text-align: center;
+    color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
+    a {
+      text-decoration: underline;
+      color: lightblue;
     }
   }
   p {
@@ -193,14 +195,10 @@ export const ContentDetails = styled.div`
     font-weight: normal;
     line-height: 1.3;
     text-align: left;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+    color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
     a {
       text-decoration: underline;
       color: lightblue;
-    }
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
   u.dotting {
@@ -261,12 +259,17 @@ export const ContentThumbnailLeft = styled.div`
   }
 `;
 
+
+export const Alignment = styled.div`
+  padding: 70px 0;
+`;
+
 export const RegisterButton = styled.button`
   width: auto;
   cursor: pointer;
-  font-size: 12pt;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  font-size: 14pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border: none;
@@ -284,8 +287,8 @@ export const RegisterButton = styled.button`
 `;
 
 export const Input = styled.input`
-  font-size: 12pt;
-  padding: 8px;
+  font-size: 14pt;
+  padding: 10px;
   background: #DCDCDC;
   border: none;
   border-radius: 10px 0 0 10px;

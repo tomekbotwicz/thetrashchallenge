@@ -14,7 +14,7 @@ import polyester from 'assets/illustrations/polyester.png';
 import bottle from 'assets/illustrations/bottle.png';
 
 import { Header } from 'components/theme';
-import { Wrapper, BannerThumbnail, Chips, Shirt, Toothbrush, Bottle, Bag, BannerThumbnail1, BannerLogo, Content, ContentBodyLead, Line, ContentBody, ContentDetails, ContentThumbnailRight, ButtonSoon, MobileLineBreak} from './styles';
+import { Wrapper, BannerThumbnail, Modal, Chips, Shirt, Toothbrush, Bottle, Bag, BannerThumbnail1, BannerLogo, Content, ContentBodyLead, Line, ContentBody, ContentDetails, Alignment, ContentThumbnailRight, ButtonSoon, MobileLineBreak} from './styles';
 import { Button } from 'components/common';
 import { Typing } from "typing-effect-reactjs";
 import { Link } from "gatsby";
@@ -36,55 +36,54 @@ export const Landing = () => {
   return (
     <Wrapper>
       <div id="mybutton">
-<button class="feedback">psst...click on each image to learn more! (not done)</button>
+<button class="feedback">psst...click on each image to learn more!</button>
 </div>
-<h1> THIS SITE IS NOT FINISHED. CHECK BACK ON TUESDAY FOR FINAL VERSION.</h1>
-
         <Row>
+          <Col sm={1}/>
           <Col sm={2.5}>
           <div id="main"></div>
-          <Chips onClick={() => setModalChips(true)}>      
+          <Chips onClick={() => setModalChips(true)}>    
           <img src={chips} alt="the trash challenge logo"/>
           </Chips>
           </Col>
-          <Col sm={2}/>
+          <Col sm={1}/>
           <Col sm={3}>
           <Shirt onClick={() => setModalShirt(true)}>
           <img src={polyester} alt="the trash challenge logo"/>
           </Shirt>
           </Col>
-          <Col sm={1.5}/>
+          <Col sm={0.5}/>
           <Col sm={3}>
           <Toothbrush onClick={() => setModalBrush(true)}>
             
           <img src={toothbrush} alt="the trash challenge logo"/>
           </Toothbrush>
           </Col>
+          <Col sm={1}/>
 </Row>
 <Row>
+          <Col sm={1}/>
           <Col sm={3}>
           <Bottle onClick={() => setModalBottle(true)}>
           <img src={bottle} alt="the trash challenge logo"/>
           </Bottle>
           </Col>
-          <Col sm={0.5}/>
-          <Col sm={5}>
+          <Col sm={4}>
           <BannerLogo theme={theme}>
           <img src={logo} alt="the trash challenge logo"/>
           </BannerLogo>
           </Col>
-          <Col sm={0.5}/>
           <Col sm={3}>
           <Bag onClick={() => setModalBag(true)}>
           <img src={bag} alt="the trash challenge logo"/>
           </Bag>
           </Col>
+          <Col sm={1}/>
           </Row>
 
     <ContentDetails>
      
       <PureModal
-        header="Chips"
         width='60%'
         height='60%'
         isOpen={modal_chips}
@@ -95,11 +94,11 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p></p>
+        <p>Ever wander the grocery store and mindlessly grab a bag of chips to snack on later? <b>I know I have.</b>
+        <br/>But did you know that a chip bag, a composite material made of layers of polypropylene (plastic), low-density polyethylene (plastic), and aluminum, simply cannot be recycled.</p>
       </PureModal>
 
       <PureModal
-        header="Shirt"
         width='60%'
         height='60%'
         isOpen={modal_shirt}
@@ -110,7 +109,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p></p>
+        <p>Ever buy a shirt?</p>
       </PureModal>
 
       <PureModal
@@ -157,13 +156,33 @@ export const Landing = () => {
       >
         <p></p>
       </PureModal>
+      <Row>
+      <Col sm={6}>
+      <Alignment>
+      <h3>Join the challenge!</h3>
+      <br/>
       <Join/>
+      <h4>
+        <b>Good Recycling Practices:</b> <a href="https://learn.eartheasy.com/guides/recycling-basics-for-the-home/" target="_blank">eartheasy</a><br/>
+        <b>How to Compost:</b> <a href="https://www.thespruce.com/how-to-compost-easy-steps-1708698" target="_blank">the spruce</a><br/>
+        <b>101 Compostable Items:</b> <a href="https://www.sustainablejungle.com/zero-waste/what-is-compostable/" target="_blank">sustainable jungle</a>
+
+      </h4>
+      </Alignment>
+        </Col>
+        <Col sm={6}>
+        <p>
+        <b>Rules and guidelines:</b><br/>
       If you choose to sign up for The Trash Challenge, you should seek to reduce your trash footprint in two ways: 
       <br/><br/>
 1. Commit to proper sortation and separation of trash, with recyclable plastics, paper, and metals going to recycling and all organics & soiled paper going to compost. All clothing should be recycled at textile recyclers or donated.
 <br/><br/>
 2. Ensure that all remaining trash is gathered and not disposed of. It must be kept inside of a receptacle smaller than 1ftx1ftx1ft in your room. Trash may be tossed at the end of the challenge.
-
+</p>
+        </Col>
+      </Row>
+      
+      
     </ContentDetails>
 
     </Wrapper>

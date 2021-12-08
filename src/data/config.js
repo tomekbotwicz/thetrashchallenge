@@ -13,7 +13,7 @@ module.exports = {
     youtube: '',
   },
   themeColor: '#FFFFFF',
-  backgroundColor: '#6b63ff',
+  backgroundColor: '#000',
   social: {
     facebook: '',
     twitter: '',

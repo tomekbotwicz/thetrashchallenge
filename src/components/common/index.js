@@ -1,4 +1,5 @@
 export * from './Layout';
 export * from './Button';
-export * from './SEO';
+export * from './Container';
+export * from './Seo';
 export * from './SidePageLayout';

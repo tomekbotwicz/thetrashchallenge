@@ -154,9 +154,9 @@ export const Landing = () => {
       <br/>
       <Join/>
       <h4>
-        <b>Good Recycling Practices:</b> <a href="https://learn.eartheasy.com/guides/recycling-basics-for-the-home/" target="_blank">eartheasy</a><br/>
-        <b>How to Compost:</b> <a href="https://www.thespruce.com/how-to-compost-easy-steps-1708698" target="_blank">the spruce</a><br/>
-        <b>101 Compostable Items:</b> <a href="https://www.sustainablejungle.com/zero-waste/what-is-compostable/" target="_blank">sustainable jungle</a>
+        <b>Good Recycling Practices:</b> <a href="https://learn.eartheasy.com/guides/recycling-basics-for-the-home/" target="_blank" rel="noreferrer">eartheasy</a><br/>
+        <b>How to Compost:</b> <a href="https://www.thespruce.com/how-to-compost-easy-steps-1708698" target="_blank" rel="noreferrer">the spruce</a><br/>
+        <b>101 Compostable Items:</b> <a href="https://www.sustainablejungle.com/zero-waste/what-is-compostable/" target="_blank" rel="noreferrer">sustainable jungle</a>
 
       </h4>
       </Alignment>

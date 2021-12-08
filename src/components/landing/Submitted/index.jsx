@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import Link from 'gatsby';
 import { Container, Button } from 'components/common';
 import { Wrapper, Details } from './styles';
 
@@ -16,11 +15,11 @@ export const Submitted = () => {
           <p>
             Thanks for joining! You will receive an email soon with details on how to begin.
           </p>
-          <Button theme={theme}>
-            <a href="/">
+          <a href="/">
+            <Button theme={theme}>
               Back
-            </a>
-          </Button>
+            </Button>
+          </a>
         </Details>
       </Wrapper>
     </div>

@@ -1,8 +1,6 @@
-import React, { Component, useContext } from 'react';
+import React, { Component } from 'react';
 import { navigate } from "gatsby";
-import { ThemeContext } from 'providers/ThemeProvider';
 import { RegisterButton, Input} from './styles';
-import styled from 'styled-components';
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value

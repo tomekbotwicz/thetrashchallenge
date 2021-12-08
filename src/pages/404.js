@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { SidePageLayout, Seo } from 'components/common';
+import { SidePageLayout, SEO } from 'components/common';
 import { ThemeContext } from 'providers/ThemeProvider';
 import styled from "styled-components";
 
@@ -21,7 +21,7 @@ export default () => {
 
   return (
   <SidePageLayout>
-    <Seo title="404: Not found" location="/404" />
+    <SEO title="404: Not found" location="/404" />
     <Center>
       <h1>404: not found</h1>
       <p><b>this page does not exist.</b></p>

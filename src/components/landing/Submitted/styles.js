@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-top: 1rem;
   text-align: center;
-  margin-bottom: 3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* prefixes */
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 `;
 
 export const Details = styled.div`
@@ -24,22 +29,12 @@ export const Details = styled.div`
     }
   }
 
-  h2 {
-    margin-bottom: 1rem;
-    font-size: 18pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-  }
-
   p {
     margin-bottom: 1.2rem;
     font-size: 15pt;
     font-weight: bold;
     line-height: 2;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;

@@ -30,7 +30,7 @@ class Join extends Component {
       .then(response => console.log("success!", response))
       .catch(error => console.error("error!", error.message));
     event.preventDefault();
-    navigate("/privacy");
+    navigate("/submitted");
   }
 
   render() {

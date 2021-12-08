@@ -36,7 +36,7 @@ export const Landing = () => {
   return (
     <Wrapper>
       <div id="mybutton">
-<button class="feedback">psst...click on each image to learn more!</button>
+<div class="feedback">psst...click on each image to learn more!</div>
 </div>
         <Row>
           <Col sm={1}/>
@@ -94,8 +94,8 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p>Ever wander the grocery store and mindlessly grab a bag of chips to snack on later? <b>I know I have.</b>
-        <br/>But did you know that a chip bag, a composite material made of layers of polypropylene (plastic), low-density polyethylene (plastic), and aluminum, simply cannot be recycled.</p>
+        <h1>Ever wander the grocery store and mindlessly grab a bag of chips to snack on later? <b>I know I have.</b>
+        <br/>But did you know that a chip bag, a composite material made of layers of polypropylene (plastic), low-density polyethylene (plastic), and aluminum, simply cannot be recycled.</h1>
       </PureModal>
 
       <PureModal
@@ -109,7 +109,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p>Ever buy a shirt?</p>
+        <h1>Ever buy a shirt?</h1>
       </PureModal>
 
       <PureModal
@@ -124,7 +124,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p></p>
+        <h1></h1>
       </PureModal>
 
       <PureModal
@@ -139,7 +139,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p></p>
+        <h1></h1>
       </PureModal>
 
       <PureModal
@@ -154,7 +154,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <p></p>
+        <h1></h1>
       </PureModal>
       <Row>
       <Col sm={6}>

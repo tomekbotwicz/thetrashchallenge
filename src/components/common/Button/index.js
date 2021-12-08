@@ -16,6 +16,8 @@ export const Button = styled.button`
   user-select: none;
   transition: all 0.5s ease;
   display: table;
+  margin-left: auto;
+  margin-right: auto;
   background: ${({ theme }) => (theme === 'dark' ? '#FFF' : '#000')};
   color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};
   :hover {

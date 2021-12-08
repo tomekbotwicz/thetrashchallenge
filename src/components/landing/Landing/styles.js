@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
     background-color : #133337;
     color: white;
     padding: 10px 20px;
+    border: 3px solid black;
     border-radius: 4px;
     border-color: #0D2326;
   }
@@ -150,23 +151,23 @@ export const ContentBodyLead = styled.div`
 
 export const ContentDetails = styled.div`
   flex: 1;
-  padding-bottom: 1rem;
   text-align: center;
 
   @media (max-width: 960px) {
     padding-left: unset;
     width: 100%;
   }
-
-  h2 {
+  h1 {
     margin-bottom: 1rem;
-    font-size: 14pt;
+    margin-top: 0.8rem;
+    font-size: 12pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    text-align: left;
+    color: black;
+    a {
+      text-decoration: underline;
+      color: lightblue;
     }
   }
   h3 {

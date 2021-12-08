@@ -150,7 +150,7 @@ export const Landing = () => {
             <br/><br/>
             Alternatives:
             <br/>
-            1. Try to purchase a bamboo or "compostable" toothbrush next time you shop ,
+            1. Try to purchase a bamboo or "compostable" toothbrush next time you shop.
             <br/>
             2. If you want to go electric, get one that has replacable heads!
             <br/><br/>
@@ -165,35 +165,67 @@ export const Landing = () => {
       <PureModal
         width='60%'
         height='60%'
+        replace='true'
         isOpen={modal_bottle}
-        closeButton="X"
-        closeButtonPosition="header"
         onClose={() => {
           setModalBottle(false);
           return true;
-        }}
-      >
-        <p>Will be posted soon!</p>
+        }}>
+        <Background>
+          <p>
+            <h1>
+              Bottles:
+            </h1>
+            <br/>
+            Ubiquitous in the modern world, plastic bottles have come to completely dominate many supermarket coolers and shelves. They can be found in nearly every forest or lake and pervade cities and streets.
+            <br/><br/>
+            Luckily, most plastic bottles are easy to recycle given that they are made of #1 plastic. Unluckily, <a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/plastics-material-specific-data" target="_blank" rel="noreferrer">only 29.1% of plastic bottles/jars</a> were actually recycled in 2018. We need reduction in usage, not recycling.
+            <br/><br/>
+            Alternatives:
+            <br/>
+            1. Aways carry a reusable water bottle. This is the singe biggest step you can take.
+            <br/>
+            2. If you need to purchase a bottled drink, look for something packaged in aluminum. It's infinitely recyclable and prevents more environmentally-damaging mining.
+            <br/><br/>
+            <a href="http://www.pngall.com/plastic-png" target="_blank" rel="noreferrer">Image source.</a>
+        </p>
+        </Background>
       </PureModal>
+
+
+
+
+
 
       <PureModal
         width='60%'
         height='60%'
+        replace='true'
         isOpen={modal_bag}
-        closeButton="X"
-        closeButtonPosition="header"
         onClose={() => {
           setModalBag(false);
           return true;
-        }}
-      >
-        <p>Will be posted soon!</p>
+        }}>
+        <Background>
+          <p>
+            <h1>
+              Bags (includes wraps/foils):
+            </h1>
+            <br/>
+            The plastics that you probably toss in the trash most often are plastic bags/wraps/foils. Made from #4 plastic (you can find this number in the middle of the recylcing symbol...it's tiny), these items CANNOT be recycled nearly anywhere.
+            <br/><br/>
+            While they break down within "only" 10-100 years, these often shed into microplastics and aare eaten by non-human animals, leading to suffocation.
+            <br/><br/>
+            Alternatives:
+            <br/>
+            1. Bring your own reusable shopping bags anytime you go out to purchase something (these should be preferably undyed cotton, which is compostable).
+            <br/>
+            2. Check to see if a plastic wrap/foil is #4 plastic. You can do this by trying to stretch it. If it appears pliable, it's probably #4. Accumulate wraps/foils into a big ball and then <a href="hhttps://search.earth911.com/?what=plastic+bags&where=&list_filter=all&max_distance=25&family_id=&latitude=&longitude=&country=&province=&city=&sponsor=" target="_blank" rel="noreferrer">take them to a recycling location</a>.
+            <br/><br/>
+            <a href="http://pngimg.com/download/81757" target="_blank" rel="noreferrer">Image source.</a>
+          </p>
+        </Background>
       </PureModal>
-
-
-
-
-
 
       <PureModal
         width='60%'

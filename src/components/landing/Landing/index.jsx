@@ -86,7 +86,18 @@ export const Landing = () => {
         }}
       >
         <h1>Ever wander the grocery store and mindlessly grab a bag of chips to snack on later? <b>I know I have.</b>
-        <br/>But did you know that a chip bag, a composite material made of layers of polypropylene (plastic), low-density polyethylene (plastic), and aluminum, simply cannot be recycled.</h1>
+        <br/>
+        <br/>But did you know that a chip bag, a composite material made of layers of polypropylene (plastic), low-density polyethylene (plastic), and aluminum, simply cannot be recycled.
+        It will stick around for <i>80 YEARS</i>. One of your legacies may be a Lay's bag.
+        <br/>
+        <br/>
+        Alternatives:
+        <br/>1. Check out the bulk section for healthy alternatives. There are delicious option you may not be aware of.
+        <br/>2. If you must, try making your own chips! It takes about half an hour. Here's a recipe: <a href="https://www.allrecipes.com/recipe/66646/potato-chips/" target="_blank" rel="noreferrer">allrecipes</a>
+        <br/>3. Importantly, don't beat yourself up if you do get some chips. This is an exercise in mindfulness, so add it to your trash challenge pile and move forward.
+        <br/><br/>
+        <a href="https://www.pinterest.com/pin/294563631856806485/" target="_blank" rel="noreferrer">Image source.</a>
+        </h1>
       </PureModal>
 
       <PureModal
@@ -100,11 +111,20 @@ export const Landing = () => {
           return true;
         }}
       >
-        <h1>Ever buy a shirt?</h1>
+        <h1>Did you know that most of the clothes that you buy are actually made of plastic?
+        <br/>
+        <br/>Polyester, an incredibly common material in nearly all clothing. Other materials like rayon are also used often.
+        <br/>
+        <br/>
+        Alternatives:
+        <br/>1. Buy clothing made from organic/natural fibers like cotton, hemp, and flax!
+        <br/>2. Wash your plastic clothing in a special bag to prevent microplastics from entering your wastewater.
+        <br/><br/>
+        <a href="http://www.pngall.com/t-shirt-png" target="_blank" rel="noreferrer">Image source.</a>
+        </h1>
       </PureModal>
 
       <PureModal
-        header="Toothbrush"
         width='60%'
         height='60%'
         isOpen={modal_toothbrush}
@@ -115,11 +135,23 @@ export const Landing = () => {
           return true;
         }}
       >
-        <h1></h1>
+        <h1>Remember how your dentist always reminds you to replace your toothbrush every 2 months?
+          <br/><br/>
+          Plastic toothbrushes, a recently modern invention, do not break down for at least 500 years.
+          <br/>
+          <a href="https://www.goingzerowaste.com/blog/the-life-of-a-toothbrush/" target="_blank" rel="noreferrer">The average person goes through 300 toothbrushes in their lifetime.</a>
+          <br/><br/>
+          Alternatives:
+          <br/>
+          1. Try to purchase a bamboo or "compostable" toothbrush next time you shop ,
+          <br/>2. If you want to go electric, get one that has replacable heads!
+          <br/><br/>
+          <a href="http://pngimg.com/download/75633" target="_blank" rel="noreferrer">Image source.</a>
+
+        </h1>
       </PureModal>
 
       <PureModal
-        header="Bottle"
         width='60%'
         height='60%'
         isOpen={modal_bottle}
@@ -130,11 +162,10 @@ export const Landing = () => {
           return true;
         }}
       >
-        <h1></h1>
+        <h1>Will be posted soon!</h1>
       </PureModal>
 
       <PureModal
-        header="Bag o' plastic"
         width='60%'
         height='60%'
         isOpen={modal_bag}
@@ -145,7 +176,7 @@ export const Landing = () => {
           return true;
         }}
       >
-        <h1></h1>
+        <h1>Will be posted soon!</h1>
       </PureModal>
       <Row>
       <Col sm={6}>

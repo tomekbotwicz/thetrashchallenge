@@ -164,7 +164,6 @@ export const ContentDetails = styled.div`
     color: black;
     a {
       text-decoration: underline;
-      color: lightblue;
     }
   }
   h3 {
@@ -199,47 +198,9 @@ export const ContentDetails = styled.div`
       color: lightblue;
     }
   }
-  u.dotting {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-  }
-
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: help;
-  }
-
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 180px;
-    background-color: #444d56;
-    color: white;
-    text-align: center;
-    border-radius: 30px;
-    padding: 15px;
-    font-size: 1rem;
-    opacity: 0;
-    transition: all .3s ease-in-out;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -100px;
-  }
-
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 0.85;
-    transform: scale(1.1);
-  }
   a.linkstyle {
     text-decoration: underline;
     color: lightblue;
-  }
-  a.emergence {
-    text-decoration: underline;
-    color: red;
   }
 `;
 

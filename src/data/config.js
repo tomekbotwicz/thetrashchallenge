@@ -1,10 +1,10 @@
 module.exports = {
-  defaultTitle: 'tomek botwicz | creating a brighter future!',
-  logo: 'https://www.tomek.org/favicon/favicon-512.png',
-  author: 'Tomek Botwicz',
-  url: 'https://www.tomek.org',
-  legalName: 'Tomek Botwicz',
-  defaultDescription: "hey, i'm an 18 year old working to make the world a better place. i'm the creator of plöt, where we're working to transform people's lifestyles. check out my site to learn more!",
+  defaultTitle: 'the trash challenge',
+  logo: 'https://www.thetrashchallenge.com/favicon/favicon-512.png',
+  author: 'Tomek',
+  url: 'https://www.thetrashchallenge.com',
+  legalName: 'Tomek',
+  defaultDescription: "hey, join the trash challenge! you can make a difference in fighting climate change and wastification.",
   socialLinks: {
     twitter: '',
     github: '',

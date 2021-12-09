@@ -51,7 +51,7 @@
       @include distribute-on-circle(5, 34em, 11em, false); 
     }
   @media (max-width: 960px) {
-      @include distribute-on-circle(5, 30em, 9em, false);
+      @include distribute-on-circle(5, 35em, 9em, false);
     }
   @media (max-width: 640px) {
     @include distribute-on-circle(5, 20em, 7em, false);

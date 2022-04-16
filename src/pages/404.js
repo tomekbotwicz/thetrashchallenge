@@ -1,5 +1,5 @@
 import React from 'react';
-import { SidePageLayout, SEO } from 'components/common';
+import { SidePageLayout, SEOConfig } from 'components/common';
 import styled from "styled-components";
 
 const Center = styled.div`
@@ -10,11 +10,10 @@ const Center = styled.div`
   transform: translate(-50%, -50%);
 `;
 
-export default () => {
-
+const Page404 = () => {
   return (
   <SidePageLayout>
-    <SEO title="404: Not found" location="/404" />
+    <SEOConfig title="404: Not found" location="/404" />
     <Center>
       <h1>404: not found</h1>
       <p><b>this page does not exist.</b></p>
@@ -23,3 +22,5 @@ export default () => {
   </SidePageLayout>
 );
 };
+
+export default Page404;

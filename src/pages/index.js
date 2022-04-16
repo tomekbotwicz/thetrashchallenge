@@ -1,10 +1,14 @@
 import React from 'react';
-import { Layout, SEO } from 'components/common';
+import { Layout, SEOConfig } from 'components/common';
 import { Landing } from 'components/landing';
 
-export default () => (
+const PageIndex = () => {
+  return (
   <Layout>
-    <SEO/>
+    <SEOConfig/>
     <Landing/>
   </Layout>
 );
+};
+
+export default PageIndex;

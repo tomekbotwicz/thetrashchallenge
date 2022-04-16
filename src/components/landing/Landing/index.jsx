@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import './circle.scss';
-import { Wrapper, Center, Chips, Shirt, Toothbrush, Bottle, Bag, BannerLogo, Background, Details, Wrap, Button } from './styles';
+import { Wrapper, Center, Chips, Bub, Shirt, Toothbrush, Bottle, Bag, BannerLogo, Background, Details, Wrap, Button } from './styles';
 import Join from './Join';
 import logo from 'assets/illustrations/logo.svg';
 import chips from 'assets/illustrations/chips.png';
@@ -57,7 +57,7 @@ export const Landing = () => {
           </Shirt>
         </li>
         <li>
-          <Center>
+          <Bub>
           <BannerLogo>
             <img src={logo} alt="the trash challenge logo"/>
           </BannerLogo>
@@ -66,7 +66,7 @@ export const Landing = () => {
             <Button onClick={() => setModalRules(true)}>rules</Button>
             <Button onClick={() => setModalResources(true)}>resources</Button>
           </Wrap>
-          </Center>
+          </Bub>
         </li>
       </ul>
     </Center>

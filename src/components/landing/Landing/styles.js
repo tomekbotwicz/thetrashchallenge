@@ -37,6 +37,10 @@ export const Center = styled.div`
   }
 `;
 
+export const Bub = styled.div`
+  margin-left: -1rem;
+`;
+
 export const Chips = styled.div`
   transition: all 0.5s ease;
   transform: rotate(-15deg);
@@ -83,30 +87,24 @@ export const Bag = styled.div`
   }
 `;
 
-{/*@media (max-width: 960px) {
-    width: 80%;
-    margin-left: 1rem;
-  }*/}
-
 export const BannerLogo = styled.div`
   transition: all 0.5s ease;
   filter: invert(1);
   pointer-events: none;
-  margin-left:-3.75em;
-  margin-top:-2rem;
-  margin-bottom:-5.5rem;
+  margin-left:-1em;
+  margin-top:-1rem;
+  margin-bottom:-6rem;
   width:150%;
   @media (max-width: 1300px) {
     margin-top:-2rem;
     margin-left:-1.5em;
     margin-bottom:-4.5rem;
-    width:120%;
+    width:150%;
   }
   @media (max-width: 960px) {
-    margin-top:15rem;
-    margin-left:0em;
-    margin-bottom:-3.5rem;
-    width:100%;
+    margin-top:-6rem;
+    margin-left:0rem;
+    width:170%;
   }
 `;
 

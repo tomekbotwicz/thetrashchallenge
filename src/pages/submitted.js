@@ -1,10 +1,14 @@
 import React from 'react';
-import { SidePageLayout, SEO } from 'components/common';
+import { SidePageLayout, SEOConfig } from 'components/common';
 import { Submitted } from 'components/landing';
 
-export default () => (
+const PageSubmitted = () => {
+  return (
   <SidePageLayout>
-    <SEO/>
+    <SEOConfig/>
     <Submitted/>
   </SidePageLayout>
 );
+};
+
+export default PageSubmitted;
